@@ -85,6 +85,7 @@ public class ContentDetails extends AppCompatActivity {
         tv_progress = (TextView) findViewById(R.id.tv_progress);
         myProgressBar = (ProgressBar) findViewById(R.id.myProgressBar);
         fr_loading = (FrameLayout) findViewById(R.id.fr_loading);
+
         mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);

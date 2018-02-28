@@ -15,6 +15,8 @@ import android.widget.TextView;
 
 
 import com.facebook.shimmer.ShimmerFrameLayout;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,6 +39,8 @@ public class OneFragment extends Fragment {
     private TextView tvNoData;
     private List<XmlDto> xmlDtoList;
     private ArrayList<String> listAdv;
+    private AdView mAdView;
+
     @SuppressLint("ValidFragment")
     public OneFragment(String str,ArrayList<String> listAdv) {
         super();
@@ -69,6 +73,10 @@ public class OneFragment extends Fragment {
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_one, container, false);
 
+        mAdView = (AdView) v.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
         Log.d(TAG, "_URL:" + _URL);
         xmlDtoList = new ArrayList<>();
         tvNoData = (TextView) v.findViewById(R.id.tvNoData);
@@ -99,4 +107,23 @@ public class OneFragment extends Fragment {
         });
         return v;
     }
+
+    @Override
+    public void onPause() {
+        if (mAdView != null) mAdView.pause();
+        super.onPause();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (mAdView != null) mAdView.resume();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if (mAdView != null) mAdView.destroy();
+    }
+
 }
