@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">News 24h</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="title_1">Tin tức trong ngày</string>
+    <string name="title_2">Bóng đá</string>
+    <string name="title_3">Công nghệ thông tin</string>
+    <string name="title_4">Thời trang Hi-tech</string>
+    <string name="title_5">Tin tức quốc tế</string>
+    <string name="title_6">Ôtô xe máy</string>
+    <string name="title_7">Sức khỏe đời sống</string>
+    <string name="title_8">Cười 24h</string>
+    <string name="title_9">Ẩm thực</string>
+    <string name="title_10">Tài chính bất động sản</string>
+    <string name="title_11">Thời trang</string>
+    <string name="title_12">Giải trí</string>
+    <string name="title_13">An ninh hình sự</string>
+    <string name="title_14">Làm đẹp</string>
+    <string name="title_15">Phim</string>
+    <string name="title_16">Giáo dục du học</string>
+    <string name="title_17">Bạn trẻ cuộc sống</string>
+    <string name="title_18">Ca Nhạc MTV</string>
+    <string name="title_19">Thể thao</string>
+    <string name="title_20">Phi thường kỳ quặc</string>
+    <string name="title_21">Thị trường tiêu dùng</string>
+    <string name="title_22">Du lịch</string>
+    <string name="title_23">Đời sống Showbiz</string>
+
+    <string name="url_1">http://www.24h.com.vn/upload/rss/tintuctrongngay.rss</string>
+    <string name="url_2">http://www.24h.com.vn/upload/rss/bongda.rss</string>
+    <string name="url_3">http://www.24h.com.vn/upload/rss/congnghethongtin.rss</string>
+    <string name="url_4">http://www.24h.com.vn/upload/rss/thoitranghitech.rss</string>
+    <string name="url_5">http://www.24h.com.vn/upload/rss/tintucquocte.rss</string>
+    <string name="url_6">http://www.24h.com.vn/upload/rss/otoxemay.rss</string>
+    <string name="url_7">http://www.24h.com.vn/upload/rss/suckhoedoisong.rss</string>
+    <string name="url_8">http://www.24h.com.vn/upload/rss/cuoi24h.rss</string>
+    <string name="url_9">http://www.24h.com.vn/upload/rss/amthuc.rss</string>
+    <string name="url_10">http://www.24h.com.vn/upload/rss/taichinhbatdongsan.rss</string>
+    <string name="url_11">http://www.24h.com.vn/upload/rss/thoitrang.rss</string>
+    <string name="url_12">http://www.24h.com.vn/upload/rss/giaitri.rss</string>
+    <string name="url_13">http://www.24h.com.vn/upload/rss/anninhhinhsu.rss</string>
+    <string name="url_14">http://www.24h.com.vn/upload/rss/lamdep.rss</string>
+    <string name="url_15">http://www.24h.com.vn/upload/rss/phim.rss</string>
+    <string name="url_16">http://www.24h.com.vn/upload/rss/giaoducduhoc.rss</string>
+    <string name="url_17">http://www.24h.com.vn/upload/rss/bantrecuocsong.rss</string>
+    <string name="url_18">http://www.24h.com.vn/upload/rss/canhacmtv.rss</string>
+    <string name="url_19">http://www.24h.com.vn/upload/rss/thethao.rss</string>
+    <string name="url_20">http://www.24h.com.vn/upload/rss/phithuongkyquac.rss</string>
+    <string name="url_21">http://www.24h.com.vn/upload/rss/thitruongtieudung.rss</string>
+    <string name="url_22">http://www.24h.com.vn/upload/rss/dulich.rss</string>
+    <string name="url_23">http://www.24h.com.vn/upload/rss/doisongshowbiz.rss</string>
+
+    <string-array name="list_link">
+        <item>@string/url_1</item>
+        <item>@string/url_2</item>
+        <item>@string/url_3</item>
+        <item>@string/url_4</item>
+        <item>@string/url_5</item>
+        <item>@string/url_6</item>
+        <item>@string/url_7</item>
+        <item>@string/url_8</item>
+        <item>@string/url_9</item>
+        <item>@string/url_10</item>
+        <item>@string/url_11</item>
+        <item>@string/url_12</item>
+        <item>@string/url_13</item>
+        <item>@string/url_14</item>
+        <item>@string/url_15</item>
+        <item>@string/url_16</item>
+        <item>@string/url_17</item>
+        <item>@string/url_18</item>
+        <item>@string/url_19</item>
+        <item>@string/url_20</item>
+        <item>@string/url_21</item>
+        <item>@string/url_22</item>
+        <item>@string/url_23</item>
+    </string-array>
+
+    <string-array name="list_title">
+        <item>@string/title_1</item>
+        <item>@string/title_2</item>
+        <item>@string/title_3</item>
+        <item>@string/title_4</item>
+        <item>@string/title_5</item>
+        <item>@string/title_6</item>
+        <item>@string/title_7</item>
+        <item>@string/title_8</item>
+        <item>@string/title_9</item>
+        <item>@string/title_10</item>
+        <item>@string/title_11</item>
+        <item>@string/title_12</item>
+        <item>@string/title_13</item>
+        <item>@string/title_14</item>
+        <item>@string/title_15</item>
+        <item>@string/title_16</item>
+        <item>@string/title_17</item>
+        <item>@string/title_18</item>
+        <item>@string/title_19</item>
+        <item>@string/title_20</item>
+        <item>@string/title_21</item>
+        <item>@string/title_22</item>
+        <item>@string/title_23</item>
+    </string-array>
+
+</resources>
