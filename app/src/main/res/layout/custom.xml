@@ -18,8 +18,8 @@
             android:layout_gravity="center"
             android:layout_margin="5dp"
             android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/temp_img"/>
+            android:background="@color/placeholder_bg"
+            android:scaleType="centerCrop" />
 
         <RelativeLayout
             android:id="@+id/textView2"
@@ -31,27 +31,29 @@
 
             <TextView
                 android:id="@+id/content"
+                android:minWidth="150dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
+                android:background="@color/placeholder_bg"
                 android:ellipsize="end"
                 android:maxLines="3"
-                android:text="content"
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/date"
+                android:minWidth="120dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
+                android:background="@color/placeholder_bg"
                 android:ellipsize="end"
                 android:maxLines="1"
-                android:text="date"
                 android:textColor="#FF0000"
                 android:textSize="14sp" />
 

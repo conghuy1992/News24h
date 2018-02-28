@@ -3,8 +3,9 @@
     <color name="colorPrimary">#9C27B0</color>
     <color name="colorPrimaryDark">#9C27B0</color>
     <color name="colorAccent">#9C27B0</color>
-
+    <color name="placeholder_bg">#dddddd</color>
 
     <color name="colorControlHighlight">#ec14c4</color>
+    <color name="colorTrans">#00000000</color>
 
 </resources>

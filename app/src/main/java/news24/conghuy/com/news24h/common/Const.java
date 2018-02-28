@@ -209,7 +209,7 @@ public class Const {
 
     public static void setPictureFromURL(final Context context, String url, final ImageView iv) {
         if(iv==null)return;
-
+        iv.setBackgroundColor(context.getResources().getColor(R.color.colorTrans));
         if (url != null && url.trim().length() > 0) {
 //            Log.d(TAG, "url:" + url);
             Glide.with(context)

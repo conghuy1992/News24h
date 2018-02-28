@@ -67,6 +67,10 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MyViewHold
         final XmlDto xmlDto = xmlDtoList.get(position);
         holder.content.setText(Html.fromHtml(xmlDto.title));
         holder.date.setText(xmlDto.pubDate);
+
+        holder.content.setBackgroundColor(context.getResources().getColor(R.color.colorTrans));
+        holder.date.setBackgroundColor(context.getResources().getColor(R.color.colorTrans));
+
         Const.setPictureFromURL(context, xmlDto.description, holder.img);
         holder.root.setOnClickListener(new View.OnClickListener() {
             @Override
