@@ -57,9 +57,9 @@ public class HttpRequest {
                         i--;
                     }
                 }
-                callBack.onSuccess(xmlDtoList);
+                if(callBack!=null)  callBack.onSuccess(xmlDtoList);
             } else {
-                callBack.onFail();
+                if(callBack!=null)   callBack.onFail();
             }
         }
     }
@@ -76,17 +76,17 @@ public class HttpRequest {
                         } catch (UnsupportedEncodingException e) {
                             e.printStackTrace();
                         }
-                        response = response.replaceAll(" & "," &amp; ");
+                        response = response.replaceAll(" & ", " &amp; ");
 //                        response = response.replaceAll("\\?","&#63;");
 
-                        new processParseXml(response, callBack).execute();
+                        if (callBack != null) new processParseXml(response, callBack).execute();
                     }
                 },
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         Log.d(TAG, "onErrorResponse:" + error.toString());
-                        callBack.onFail();
+                        if (callBack != null) callBack.onFail();
                     }
                 }) {
             @Override
@@ -99,6 +99,8 @@ public class HttpRequest {
                 Apis.TIMEOUT_MS,
                 DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
                 DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+        stringRequest.setShouldCache(false);
+
         //Adding the string request to the queue
         RequestQueue requestQueue = Volley.newRequestQueue(context);
         requestQueue.add(stringRequest);

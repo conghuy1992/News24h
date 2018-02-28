@@ -13,11 +13,12 @@ import android.view.ViewGroup;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.facebook.shimmer.ShimmerFrameLayout;
+
 import java.util.ArrayList;
 import java.util.List;
 
 import news24.conghuy.com.news24h.common.HttpRequest;
-import news24.conghuy.com.news24h.common.adapters.MoviesAdapter;
 import news24.conghuy.com.news24h.R;
 import news24.conghuy.com.news24h.common.interfaces.XmlDataCallBack;
 import news24.conghuy.com.news24h.model.XmlDto;
@@ -27,10 +28,9 @@ import news24.conghuy.com.news24h.model.XmlDto;
  */
 public class OneFragment extends Fragment {
     private String TAG = "OneFragment";
-
+    private ShimmerFrameLayout mShimmerViewContainer;
     private MoviesAdapter mAdapter;
     private RecyclerView recyclerView;
-    private ProgressBar myProgressBar1;
     private String EXTRA_MESSAGE = "EXTRA_MESSAGE";
     private String _URL = "";
     private TextView tvNoData;
@@ -53,13 +53,22 @@ public class OneFragment extends Fragment {
 //        _URL = getArguments().getString(Apis.EXTRA_MESSAGE);
     }
 
+    private void showLoading(){
+        mShimmerViewContainer.setVisibility(View.VISIBLE);
+        mShimmerViewContainer.startShimmerAnimation();
+
+    }
+    private void hideLoading(){
+        mShimmerViewContainer.setVisibility(View.GONE);
+        mShimmerViewContainer.stopShimmerAnimation();
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_one, container, false);
 
         Log.d(TAG, "_URL:" + _URL);
-        myProgressBar1 = (ProgressBar) v.findViewById(R.id.myProgressBar1);
         xmlDtoList = new ArrayList<>();
         tvNoData = (TextView) v.findViewById(R.id.tvNoData);
         recyclerView = (RecyclerView) v.findViewById(R.id.recycler_view);
@@ -68,10 +77,14 @@ public class OneFragment extends Fragment {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(mAdapter);
 
+        mShimmerViewContainer = (ShimmerFrameLayout) v.findViewById(R.id.shimmer_view_container);
+
+        showLoading();
+
         new HttpRequest(getActivity()).getData(_URL, new XmlDataCallBack() {
             @Override
             public void onSuccess(List<XmlDto> list) {
-                myProgressBar1.setVisibility(View.GONE);
+                hideLoading();
                 Log.d(TAG, "onSuccess:" + list.size());
                 mAdapter.update(list);
             }
@@ -79,7 +92,7 @@ public class OneFragment extends Fragment {
             @Override
             public void onFail() {
                 Log.d(TAG, "onFail");
-                myProgressBar1.setVisibility(View.GONE);
+                hideLoading();
                 tvNoData.setVisibility(View.VISIBLE);
             }
         });

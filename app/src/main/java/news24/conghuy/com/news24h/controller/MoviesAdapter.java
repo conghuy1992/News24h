@@ -1,4 +1,4 @@
-package news24.conghuy.com.news24h.common.adapters;
+package news24.conghuy.com.news24h.controller;
 
 import android.content.Context;
 import android.content.Intent;
@@ -16,6 +16,7 @@ import java.util.List;
 
 import news24.conghuy.com.news24h.ContentDetails;
 import news24.conghuy.com.news24h.R;
+import news24.conghuy.com.news24h.common.Apis;
 import news24.conghuy.com.news24h.common.Const;
 import news24.conghuy.com.news24h.model.XmlDto;
 
@@ -72,7 +73,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MyViewHold
             public void onClick(View view) {
 //                Log.d(TAG, "" + xmlDto.link);
                 Intent intent = new Intent(context, ContentDetails.class);
-                intent.putExtra("link", xmlDto.link);
+                intent.putExtra(Apis.link, xmlDto.link);
                 intent.putStringArrayListExtra(Const.LIST_ADV, listAdv);
                 context.startActivity(intent);
             }

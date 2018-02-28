@@ -7,5 +7,6 @@ public interface Apis {
     String prefname = "my_data";
     String EXTRA_MESSAGE = "EXTRA_MESSAGE";
     int TIMEOUT_MS = 7000;
+    String link="link";
 
 }
