@@ -6,7 +6,7 @@
     android:clickable="true"
     android:orientation="horizontal">
 
-    <news24.conghuy.com.news24h._class.RobotoTextView
+    <TextView
         android:id="@+id/tvContent"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"

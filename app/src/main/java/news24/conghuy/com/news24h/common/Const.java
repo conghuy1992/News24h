@@ -1,4 +1,4 @@
-package news24.conghuy.com.news24h._class;
+package news24.conghuy.com.news24h.common;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -22,7 +22,6 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 import org.xmlpull.v1.XmlPullParser;
-import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
 
 import java.io.BufferedReader;
@@ -32,7 +31,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.StringReader;
 import java.io.UnsupportedEncodingException;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,9 +39,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
 import news24.conghuy.com.news24h.R;
-import news24.conghuy.com.news24h.object.XmlDto;
-
-import static android.graphics.Bitmap.createScaledBitmap;
+import news24.conghuy.com.news24h.model.XmlDto;
 
 /**
  * Created by maidinh on 7/25/2017.

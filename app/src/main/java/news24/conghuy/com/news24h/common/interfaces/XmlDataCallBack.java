@@ -1,8 +1,8 @@
-package news24.conghuy.com.news24h.interfaces;
+package news24.conghuy.com.news24h.common.interfaces;
 
 import java.util.List;
 
-import news24.conghuy.com.news24h.object.XmlDto;
+import news24.conghuy.com.news24h.model.XmlDto;
 
 /**
  * Created by maidinh on 7/25/2017.

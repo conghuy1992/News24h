@@ -1,4 +1,4 @@
-package news24.conghuy.com.news24h._class;
+package news24.conghuy.com.news24h.common;
 
 import android.content.Context;
 import android.os.AsyncTask;
@@ -18,8 +18,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import news24.conghuy.com.news24h.interfaces.XmlDataCallBack;
-import news24.conghuy.com.news24h.object.XmlDto;
+import news24.conghuy.com.news24h.common.interfaces.XmlDataCallBack;
+import news24.conghuy.com.news24h.model.XmlDto;
 
 /**
  * Created by maidinh on 7/25/2017.

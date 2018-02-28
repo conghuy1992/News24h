@@ -9,12 +9,12 @@ android {
             storePassword '12122112'
         }
     }
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
     defaultConfig {
-        applicationId "news24.conghuy.com.news24h"
+        applicationId "com.conghuy.news24h"
         minSdkVersion 11
-        targetSdkVersion 23
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
     }

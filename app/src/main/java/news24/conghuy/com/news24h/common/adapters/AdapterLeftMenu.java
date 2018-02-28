@@ -1,20 +1,16 @@
-package news24.conghuy.com.news24h.adapter;
+package news24.conghuy.com.news24h.common.adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 import java.util.ArrayList;
 
 import news24.conghuy.com.news24h.R;
-import news24.conghuy.com.news24h.object.News24h;
+import news24.conghuy.com.news24h.model.News24h;
 
 public class AdapterLeftMenu extends RecyclerView.Adapter<AdapterLeftMenu.MyViewHolder> {
 

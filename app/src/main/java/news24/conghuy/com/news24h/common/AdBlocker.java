@@ -1,4 +1,4 @@
-package news24.conghuy.com.news24h._class;
+package news24.conghuy.com.news24h.common;
 
 import android.webkit.WebResourceResponse;
 

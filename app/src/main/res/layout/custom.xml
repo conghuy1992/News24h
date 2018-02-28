@@ -29,7 +29,7 @@
             android:layout_margin="5dp">
 
 
-            <news24.conghuy.com.news24h._class.RobotoTextView
+            <TextView
                 android:id="@+id/content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <news24.conghuy.com.news24h._class.RobotoTextView
+            <TextView
                 android:id="@+id/date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

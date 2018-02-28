@@ -1,14 +1,11 @@
 package news24.conghuy.com.news24h;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
@@ -29,12 +26,10 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
 import java.util.ArrayList;
-import java.util.List;
 
-import news24.conghuy.com.news24h._class.AdBlocker;
-import news24.conghuy.com.news24h._class.Const;
-import news24.conghuy.com.news24h._class.PrefManager;
-import news24.conghuy.com.news24h.customUI.ProgressIndicator;
+import news24.conghuy.com.news24h.common.AdBlocker;
+import news24.conghuy.com.news24h.common.Const;
+import news24.conghuy.com.news24h.common.PrefManager;
 
 /**
  * Created by huy on 1/24/16.

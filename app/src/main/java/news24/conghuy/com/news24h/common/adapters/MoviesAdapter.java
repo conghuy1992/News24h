@@ -1,10 +1,9 @@
-package news24.conghuy.com.news24h.adapter;
+package news24.conghuy.com.news24h.common.adapters;
 
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.text.Html;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,8 +16,8 @@ import java.util.List;
 
 import news24.conghuy.com.news24h.ContentDetails;
 import news24.conghuy.com.news24h.R;
-import news24.conghuy.com.news24h._class.Const;
-import news24.conghuy.com.news24h.object.XmlDto;
+import news24.conghuy.com.news24h.common.Const;
+import news24.conghuy.com.news24h.model.XmlDto;
 
 /**
  * Created by maidinh on 13/7/2016.

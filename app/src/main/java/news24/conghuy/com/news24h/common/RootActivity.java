@@ -1,4 +1,4 @@
-package news24.conghuy.com.news24h;
+package news24.conghuy.com.news24h.common;
 
 import android.os.Build;
 import android.os.Bundle;

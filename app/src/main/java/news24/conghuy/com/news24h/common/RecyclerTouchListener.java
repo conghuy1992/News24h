@@ -1,4 +1,4 @@
-package news24.conghuy.com.news24h._class;
+package news24.conghuy.com.news24h.common;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -6,7 +6,7 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 
-import news24.conghuy.com.news24h.interfaces.ClickListener;
+import news24.conghuy.com.news24h.common.interfaces.ClickListener;
 
 /**
  * Created by maidinh on 13/7/2016.

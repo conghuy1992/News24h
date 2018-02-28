@@ -1,4 +1,4 @@
-package news24.conghuy.com.news24h.customUI;
+package news24.conghuy.com.news24h.view;
 
 import android.content.Context;
 import android.content.res.Resources;

@@ -1,4 +1,4 @@
-package news24.conghuy.com.news24h.interfaces;
+package news24.conghuy.com.news24h.common.interfaces;
 
 import android.view.View;
 

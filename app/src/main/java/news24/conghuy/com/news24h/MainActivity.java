@@ -20,19 +20,19 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import news24.conghuy.com.news24h._class.Apis;
-import news24.conghuy.com.news24h._class.ConnectionDetector;
-import news24.conghuy.com.news24h._class.Const;
-import news24.conghuy.com.news24h._class.PrefManager;
-import news24.conghuy.com.news24h._class.RecyclerTouchListener;
-import news24.conghuy.com.news24h.adapter.AdapterLeftMenu;
-import news24.conghuy.com.news24h.fragmentClass.OneFragment;
-import news24.conghuy.com.news24h.interfaces.ClickListener;
-import news24.conghuy.com.news24h.object.News24h;
+import news24.conghuy.com.news24h.common.Apis;
+import news24.conghuy.com.news24h.common.ConnectionDetector;
+import news24.conghuy.com.news24h.common.Const;
+import news24.conghuy.com.news24h.common.PrefManager;
+import news24.conghuy.com.news24h.common.RecyclerTouchListener;
+import news24.conghuy.com.news24h.common.RootActivity;
+import news24.conghuy.com.news24h.common.adapters.AdapterLeftMenu;
+import news24.conghuy.com.news24h.controller.OneFragment;
+import news24.conghuy.com.news24h.common.interfaces.ClickListener;
+import news24.conghuy.com.news24h.model.News24h;
 
 public class MainActivity extends RootActivity {
     private ConnectionDetector cd;
-    private SharedPreferences pre;
     private String TAG = "MainActivity";
     private ArrayList<News24h> listNews24h;
     private AdapterLeftMenu mAdapter;
@@ -41,6 +41,8 @@ public class MainActivity extends RootActivity {
     private String list_link[];
     private int temp = 0;
     private Context context;
+    private PrefManager prefManager;
+    private MenuItem action_settings;
 
     public void initLeftMenu() {
         recyclerView = (RecyclerView) findViewById(R.id.sliding_menu);
@@ -99,7 +101,6 @@ public class MainActivity extends RootActivity {
         initListNews24h();
         initLeftMenu();
 
-        pre = getSharedPreferences(Apis.prefname, MODE_PRIVATE);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -163,9 +164,6 @@ public class MainActivity extends RootActivity {
         }
     }
 
-    MenuItem action_settings;
-    private PrefManager prefManager;
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -208,12 +206,10 @@ public class MainActivity extends RootActivity {
         super.onPause();
     }
 
-    static boolean check = false;
 
     @Override
     protected void onResume() {
         super.onResume();
-        check = pre.getBoolean("checked", true);
     }
 
     @Override

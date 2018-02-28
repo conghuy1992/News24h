@@ -1,4 +1,4 @@
-package news24.conghuy.com.news24h.fragmentClass;
+package news24.conghuy.com.news24h.controller;
 
 import android.annotation.SuppressLint;
 import android.app.Fragment;
@@ -16,11 +16,11 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-import news24.conghuy.com.news24h._class.HttpRequest;
-import news24.conghuy.com.news24h.adapter.MoviesAdapter;
+import news24.conghuy.com.news24h.common.HttpRequest;
+import news24.conghuy.com.news24h.common.adapters.MoviesAdapter;
 import news24.conghuy.com.news24h.R;
-import news24.conghuy.com.news24h.interfaces.XmlDataCallBack;
-import news24.conghuy.com.news24h.object.XmlDto;
+import news24.conghuy.com.news24h.common.interfaces.XmlDataCallBack;
+import news24.conghuy.com.news24h.model.XmlDto;
 
 /**
  * Created by huy on 19/07/2016.

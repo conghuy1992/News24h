@@ -1,4 +1,4 @@
-package news24.conghuy.com.news24h.object;
+package news24.conghuy.com.news24h.model;
 
 /**
  * Created by maidinh on 20/7/2016.

@@ -1,4 +1,4 @@
-package news24.conghuy.com.news24h.adapter;
+package news24.conghuy.com.news24h.common.adapters;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
