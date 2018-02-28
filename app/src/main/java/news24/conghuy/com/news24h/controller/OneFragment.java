@@ -13,7 +13,6 @@ import android.view.ViewGroup;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.facebook.shimmer.ShimmerFrameLayout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,7 +27,7 @@ import news24.conghuy.com.news24h.model.XmlDto;
  */
 public class OneFragment extends Fragment {
     private String TAG = "OneFragment";
-    private ShimmerFrameLayout mShimmerViewContainer;
+//    private ShimmerFrameLayout mShimmerViewContainer;
     private MoviesAdapter mAdapter;
     private RecyclerView recyclerView;
     private String EXTRA_MESSAGE = "EXTRA_MESSAGE";
@@ -54,13 +53,13 @@ public class OneFragment extends Fragment {
     }
 
     private void showLoading(){
-        mShimmerViewContainer.setVisibility(View.VISIBLE);
-        mShimmerViewContainer.startShimmerAnimation();
+//        mShimmerViewContainer.setVisibility(View.VISIBLE);
+//        mShimmerViewContainer.startShimmerAnimation();
 
     }
     private void hideLoading(){
-        mShimmerViewContainer.setVisibility(View.GONE);
-        mShimmerViewContainer.stopShimmerAnimation();
+//        mShimmerViewContainer.setVisibility(View.GONE);
+//        mShimmerViewContainer.stopShimmerAnimation();
     }
 
     @Override
@@ -77,7 +76,7 @@ public class OneFragment extends Fragment {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(mAdapter);
 
-        mShimmerViewContainer = (ShimmerFrameLayout) v.findViewById(R.id.shimmer_view_container);
+//        mShimmerViewContainer = (ShimmerFrameLayout) v.findViewById(R.id.shimmer_view_container);
 
         showLoading();
 
